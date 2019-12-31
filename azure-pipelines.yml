@@ -16,11 +16,21 @@ steps:
     - task: UseDotNet@2
       inputs:
         version: '3.0.x'
+<<<<<<< HEAD
         performMultiLevelLookup: true
+=======
+>>>>>>> 4bc889d7aaba0113553bb7397350cfe3c79118d5
 
     - task: UseDotNet@2
       inputs:
         version: '2.2.x'
         packageType: runtime
+<<<<<<< HEAD
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
+=======
+        performMultiLevelLookup: true
+        
+    - script: dotnet build --configuration $(buildConfiguration)
+      displayName: 'dotnet build $(buildConfiguration)'
+>>>>>>> 4bc889d7aaba0113553bb7397350cfe3c79118d5
